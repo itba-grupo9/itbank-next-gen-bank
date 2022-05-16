@@ -41,6 +41,30 @@ h6 {
 #__next {
   isolation: isolate;
 }
-.seccion1 {
-  height: 500px;
+
+
+#features {
+z-index: 1000;
+position: relative
+}
+
+.card-main{
+position: relative;
+max-width: 60%;
+z-index: -1000;
+display: inline-block
+}
+
+.card{
+  display: inline-block;
+  margin: 0px 5px 100px;
+position: relative;
+justify-content: center;
+}
+
+#actions{
+position: relative;
+background-color: white;
+height: 50px;
+
 }
