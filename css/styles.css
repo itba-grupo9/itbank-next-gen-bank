@@ -47,6 +47,7 @@ h6 {
 z-index: 1000;
 position: relative
 }
+<<<<<<< HEAD
 
 .card-main{
 position: relative;
@@ -68,3 +69,6 @@ background-color: white;
 height: 50px;
 
 }
+=======
+p.texto-acces { color: black;}
+>>>>>>> d8690341575d219fc4b3c73ab68e1334125cac6d
