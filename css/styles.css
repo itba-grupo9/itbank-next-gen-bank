@@ -5,184 +5,164 @@
 }
 * {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
-html,
-body {
-  height: 100%;
-}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-image: linear-gradient(to left top, #000000, #190b14, #221527, #221f3e, #002d57);
   background-repeat: no-repeat;
 }
-img,
-picture,
-video,
-canvas,
-svg {
+
+/* ------------------------------------------------- Nav ----------------------------------- */
+.main-logo {
+  max-width: 16rem;
+}
+
+.container-title {
+  padding: 20px 60px;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+/* ------------------------------------------------- Main Section ----------------------------------- */
+.main-section{
+  margin-top: 60px;
+margin-bottom: 40px;
+  }
+
+
+
+#main-title {
+  color: #e3e3e4;
   display: block;
-  max-width: 100%;
+  margin: 0 auto 0 auto;
+  font-weight: bold;
+
+  text-align: center;
+padding: 170px 100px 0 ;
+line-height: 1.5;
 }
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-#root,
-#__next {
-  isolation: isolate;
+#title-image {
+  width: 76%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 
+
+
+/* -------------------------------------- Features Section -------------------------------------------------- */
 #features {
-z-index: 1000;
-position: relative
+  padding: 11% 15%;
+  text-align: center;
+  background-color: #cbbdd4
 }
 
-.card-main{
-position: relative;
-max-width: 60%;
-z-index: -1000;
-display: inline-block
+.feature-icon {
+  padding: 15px;
+  color: #221f3e;
+  font-size: 4.5rem;
 }
 
-.card{
+.feature-icon:hover {
+  color: #384d61;
+}
+
+.features-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+
+
+/* -------------------------------------- App Section -------------------------------------------------- */
+
+#app {
+  padding: 5% 15% 5%;
+  text-align: center;
+  background-color: #372746
+}
+
+
+.download-btn{
+margin: 25px 10px;
+padding: 15px;
+
+
+}
+
+
+/* --------------------------- FOOTER ------------------------------------------- */
+
+/* 
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footer-links.inline li {
   display: inline-block;
-  margin: 0px 5px 100px;
-position: relative;
-justify-content: center;
 }
-
-#actions{
-position: relative;
-background-color: white;
-height: 50px;
-
+.site-footer .social-icons {
+  text-align: right;
 }
-
-.logo-img{
-max-width: 30%;
-
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
 }
-
-
-#navbar-salir{
-color: #2F8F9D;
-}
-.logo-itbank{
-  width: 35%;
-} 
-
-.principal{
-  
-  font-size: 80px;
-  width: 40vw;
-  color: whitesmoke;
-  
-}
-
-.sub{
-  color: whitesmoke;
-  font-size: 30px;
-}
-
-.mid-content-left{
- width: min-content;
- margin-left: 10%;
- margin-top: 5%;
-}
-.mid-content-right{ 
-  margin-right: 10%;
-  margin-top: 5%;
- }
-
- .rcta-mid{
-   font-size: 50px;
- }
-
-
- .site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
+.copyright-text {
+  margin: 0;
+} */
