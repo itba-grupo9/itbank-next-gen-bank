@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../resources/img/favicon.ico" />
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/51da3644b6.js" crossorigin="anonymous"></script>
     <!-- CSS BOOTSTRAP -->
@@ -18,6 +19,34 @@
     <title>ITbank - Login</title>
   </head>
   <body>
+    <header>
+      <div class="container-header container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="/index.html" class="navbar-brand ms-3"
+            ><img src="/resources/img/itbank-logo.png" alt="itbank-logo" class="main-logo"
+          /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse px-4" id="nav-menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/index.html#app" class="nav-link">Descarga la App</a>
+              </li>
+              <li class="nav-item">
+                <a href="/index.html#features" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="/views/login.html" class="nav-link">Login</a>
+              </li>
+              <li class="nav-item">
+                <a href="/views/registro.html" class="nav-link">Registrate</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <section class="h-100">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center">
@@ -26,7 +55,7 @@
               <div class="row g-0">
                 <div class="card-body p-md-5 mx-md-4">
                   <div class="text-center">
-                    <a href="..\index.html"> <img id="itbank-logo-login" src="/resources/img/itbank-logo.png" alt="logo" /></a>
+                    <a href="../index.html"> <img id="itbank-logo-login" src="/resources/img/itbank-logo.png" alt="logo" /></a>
                   </div>
                   <form id="login-form-container">
                     <p class="text-center py-3">Por favor, ingrese los siguientes datos:</p>
