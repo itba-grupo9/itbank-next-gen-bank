@@ -36,7 +36,18 @@ body {
 
 .nav-item {
   margin: 20px;
+
 }
+.navbar{
+  color: #190b14;
+}
+.container-fluid {
+ 
+  position: sticky;
+  top: 0%;
+}
+
+
 
 /* ------------------------------------------------- Main Section ----------------------------------- */
 .main-section {
