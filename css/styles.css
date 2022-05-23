@@ -217,3 +217,11 @@ body {
     width: 100%;
   }
 }
+
+/* -------------------------------------------------- REGISTER SECTION -------------------------------------------------- */
+#login-menu-container {
+  width: 90%;
+  max-width: max-content;
+  margin: 0;
+  padding: 0;
+}
