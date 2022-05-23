@@ -86,9 +86,26 @@ body {
 /* -------------------------------------- App Section -------------------------------------------------- */
 
 #app {
-  padding: 5% 15% 5%;
   text-align: center;
   background-color: #372746;
+  position: relative;
+}
+#descargar-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: -140px;
+}
+#title-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+}
+#main-title {
+  font-size: 1.9rem;
+  text-align: center;
 }
 
 .download-btn {
