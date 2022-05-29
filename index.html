@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +24,18 @@
           src="resources/img/itbank-logo.png" alt="logo itbank"></a>
       <img class="header__nav__iconoMenu" src="resources/img/hamburger-menu.svg" alt="icono menu">
       <ul class="header__nav__menu">
-        <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#">Descarga la App</a></li>
-        <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#">Nosotros</a></li>
-        <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="views/login.html">Login</a>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" id="menuDescargarApp" href="#descargarApp">Descarga la App</a>
         </li>
-        <li class="header__nav__menu__item"><a class="header__nav__menu__item__link"
-            href="views/registro.html">Registrate</a></li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="#">Nosotros</a>
+        </li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="views/login.html">Login</a>
+        </li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="views/registro.html">Registrate</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -61,7 +68,7 @@
   </section>
 
   <!-- SECCION DESCARGAR APP -->
-  <section class="descargarApp">
+  <section class="descargarApp" id="descargarApp">
     <img class="descargarApp__img" src="resources/img/phone.png" alt="imagen telefono">
 
     <div class="descargarApp__containerDescargar">
@@ -141,7 +148,8 @@
     </section>
 
     <section class="footer__copyright">
-      <p class="footer__copyright__texto">Copyright &copy; 2022 All Rights Reserved by <a class="footer__copyright__texto__link" href="index.html">ITBANK.</a></p>
+      <p class="footer__copyright__texto">Copyright &copy; 2022 All Rights Reserved by <a
+          class="footer__copyright__texto__link" href="index.html">ITBANK.</a></p>
     </section>
   </footer>
 

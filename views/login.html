@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../resources/img/favicon.ico" type="image/x-icon">
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>ITBank - Login</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__nav__link" href="../index.html"><img class="header__nav__link__logo"
+          src="../resources/img/itbank-logo.png" alt="logo itbank"></a>
+      <img class="header__nav__iconoMenu" src="../resources/img/hamburger-menu.svg" alt="icono menu">
+      <ul class="header__nav__menu">
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" id="menuDescargarApp" href="../index.html#descargarApp">Descarga la
+            App</a>
+        </li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="#">Nosotros</a>
+        </li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="views/login.html">Login</a>
+        </li>
+        <li class="header__nav__menu__item">
+          <a class="header__nav__menu__item__link" href="views/registro.html">Registrate</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCION LOGIN -->
+  <section class="container">
+    <div class="container__loginCard">
+      <img class="container__loginCard__img" src="../resources/img/itbank-logo.png" alt="logotipo itbank">
+      <span class="container__loginCard__texto">Por favor, ingrese los siguientes datos:</span>
+      <form class="container__loginCard__form" action="" method="post">
+        <label class="container__loginCard__form__label" for="userEmail">Usuario
+          <input class="container__loginCard__form__label__input" type="text" name="userEmail" id="userEmail" placeholder="Inserte su usuario o Email">
+        </label>
+        <label class="container__loginCard__form__label" for="password">Contraseña
+          <input class="container__loginCard__form__label__input" type="text" name="password" id="password" placeholder="Inserte su contraseña">
+        </label>
+        <button class="container__loginCard__form__btn" type="submit">Ingresar</button>
+      </form>
+      <div class="container__loginCard__contrasenaRegistrarse">
+        <a class="container__loginCard__contrasenaRegistrarse__link" href="#">Olvidó su contraseña?</a>
+        <a class="container__loginCard__contrasenaRegistrarse__link" href="../views/registro.html">Registrarse</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <section class="footer__about">
+      <span class="footer__about__titulo">About</span>
+      <p class="footer__about__descripcion">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error est corporis
+        quidem accusamus nulla dolorum ab porro minima animi dolorem illum, autem dolor qui provident perspiciatis
+        consequuntur ratione doloremque quibusdam!
+        Iste, provident culpa aliquam cumque sunt dignissimos sit error iusto aspernatur inventore repellendus sed ea
+        assumenda modi ducimus cupiditate ad officia? Illo aut id ut corrupti commodi aspernatur maiores fuga.
+      </p>
+    </section>
+
+    <section class="footer__categorias">
+      <span class="footer__categorias__titulo">Categories</span>
+      <ul class="footer__categorias__lista">
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Abrir una cuenta</a>
+        </li>
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Careers</a>
+        </li>
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Lorem</a>
+        </li>
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Ipsum</a>
+        </li>
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Corporis</a>
+        </li>
+        <li class="footer__categorias__lista__item">
+          <a class="footer__categorias__lista__item__link" href="#">Aspernatur</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer__enlacesImportantes">
+      <span class="footer__enlacesImportantes__titulo">Enlaces importantes</span>
+      <ul class="footer__enlacesImportantes__lista">
+        <li class="footer__enlacesImportantes__lista__item">
+          <a class="footer__enlacesImportantes__lista__item__link" href="#">Nosotros</a>
+        </li>
+        <li class="footer__enlacesImportantes__lista__item">
+          <a class="footer__enlacesImportantes__lista__item__link" href="#">Contacto</a>
+        </li>
+        <li class="footer__enlacesImportantes__lista__item">
+          <a class="footer__enlacesImportantes__lista__item__link" href="#">Contribuir</a>
+        </li>
+        <li class="footer__enlacesImportantes__lista__item">
+          <a class="footer__enlacesImportantes__lista__item__link" href="#">Politicas de Privacidad</a>
+        </li>
+        <li class="footer__enlacesImportantes__lista__item">
+          <a class="footer__enlacesImportantes__lista__item__link" href="#">Sitemap</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer__copyright">
+      <p class="footer__copyright__texto">Copyright &copy; 2022 All Rights Reserved by <a
+          class="footer__copyright__texto__link" href="../index.html">ITBANK.</a></p>
+    </section>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

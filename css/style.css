@@ -139,7 +139,7 @@ body {
 
 .descargarApp {
   position: relative;
-  height: 500px;
+  height: 800px;
   background-color: #372746;
 }
 .descargarApp__img {
@@ -231,6 +231,70 @@ body {
 }
 .footer__copyright__texto__link {
   color: #9b9b9b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container__loginCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 15px;
+}
+.container__loginCard__img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.container__loginCard__texto {
+  font-size: 0.9rem;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+.container__loginCard__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.container__loginCard__form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 400;
+}
+.container__loginCard__form__label__input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #9b9b9b;
+}
+.container__loginCard__form__btn {
+  width: max-content;
+  align-self: center;
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  background-color: #50aadc;
+  border-radius: 5px;
+}
+.container__loginCard__contrasenaRegistrarse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.container__loginCard__contrasenaRegistrarse__link {
+  color: #50aadc;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
