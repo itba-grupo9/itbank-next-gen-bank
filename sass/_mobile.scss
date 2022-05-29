@@ -1,0 +1,259 @@
+body {
+  background-image: linear-gradient(
+    to left top,
+    #000000,
+    #190b14,
+    #221527,
+    #221f3e,
+    #002d57
+  );
+  font-family: "Montserrat", sans-serif;
+  z-index: -1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(11.5px);
+  position: fixed;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 2;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 10px;
+
+    &__link {
+      &__logo {
+        height: 50px;
+      }
+    }
+    &__iconoMenu {
+      width: 50px;
+      padding: 10px;
+      border-radius: 100%;
+      filter: invert(39%) sepia(0%) saturate(0%) hue-rotate(189deg)
+        brightness(93%) contrast(77%);
+      border: 2px solid #50aadc;
+      cursor: pointer;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      list-style: none;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 30px 10px 0 10px;
+      height: 100vh;
+      margin-left: -100%;
+      gap: 50px;
+      transition: 250ms margin-left ease-in-out;
+      background-color: #221f3e;
+
+      &__item {
+        &__link {
+          color: rgb(155, 155, 155);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .--menuVisible {
+    margin-left: 0;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  padding: 0 20px;
+
+  &__titulo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin: auto 0;
+  }
+  &__img {
+    justify-self: flex-end;
+  }
+}
+
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  background-color: #cbbdd4;
+  gap: 40px;
+  padding: 70px 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+    &__icono {
+      width: 80px;
+      filter: invert(10%) sepia(38%) saturate(992%) hue-rotate(206deg) brightness(98%) contrast(94%);
+
+      &:hover {
+        filter: invert(26%) sepia(29%) saturate(589%) hue-rotate(168deg) brightness(95%) contrast(89%);
+      }
+    }
+    &__titulo {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #252525;
+    }
+  }
+}
+
+.descargarApp {
+  position: relative;
+  height: 500px;
+  background-color: #372746;
+  
+  &__img {
+    position: absolute;
+    width: 320px;
+    bottom: 0;
+    right: 0;
+
+  }
+  &__containerDescargar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 120px;
+    right: 105px;
+    gap: 30px;
+
+    &__titulo {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #cbbdd4;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 150px;
+    }
+    &__botones {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &__appStore {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+        background-color: #212529;
+        padding: 0 15px;
+        border-radius: 10px;
+        height: 55px;
+
+        &__logo {
+          width: 25px;
+          filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+        }
+      }
+      &__playStore {
+        @extend .descargarApp__containerDescargar__botones__appStore;
+        background-color: #ffffff00;
+        border: 1px solid #fff;
+
+        &__logo {
+          @extend .descargarApp__containerDescargar__botones__appStore__logo;
+        }
+      }
+
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px 0;
+  gap: 30px;
+  background-color: #26272b;
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__titulo {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &__descripcion {
+      color: #9b9b9b;
+      font-size: 0.9rem;
+    }
+  }
+  &__categorias {
+    @extend .footer__about;
+
+    &__titulo {
+      @extend .footer__about__titulo;
+    }
+    &__lista {
+      list-style: none;
+
+      &__item {
+        &__link {
+          @extend .footer__about__descripcion;
+        }
+      }
+    }
+  }
+  &__enlacesImportantes {
+    @extend .footer__about;
+
+    &__titulo {
+      @extend .footer__about__titulo;
+    }
+    &__lista {
+      list-style: none;
+
+      &__item {
+        &__link {
+          @extend .footer__about__descripcion;
+        }
+      }
+    }
+  }
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #9b9b9b;
+    padding: 20px 0;
+    color: #9b9b9b;
+
+    &__texto {
+      font-size: 0.9rem;
+
+      &__link {
+        color: #9b9b9b;
+      }
+    }
+  }
+}
