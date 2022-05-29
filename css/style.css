@@ -240,7 +240,7 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.container__loginCard {
+.container__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,34 +249,44 @@ body {
   border-radius: 10px;
   padding: 30px 15px;
 }
-.container__loginCard__img {
+.container__card__img {
   width: 90%;
   margin-bottom: 20px;
 }
-.container__loginCard__texto {
+.container__card__titulo {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #252525;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container__card__texto {
   font-size: 0.9rem;
   align-self: flex-start;
   margin-bottom: 30px;
 }
-.container__loginCard__form {
+.container__card__form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 100%;
   margin-bottom: 50px;
 }
-.container__loginCard__form__label {
+.container__card__form__label {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   font-weight: 400;
 }
-.container__loginCard__form__label__input {
+.container__card__form__label__input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #9b9b9b;
 }
-.container__loginCard__form__btn {
+.container__card__form__label__nota {
+  font-size: 0.8rem;
+}
+.container__card__form__btn {
   width: max-content;
   align-self: center;
   padding: 5px 10px;
@@ -285,14 +295,14 @@ body {
   background-color: #50aadc;
   border-radius: 5px;
 }
-.container__loginCard__contrasenaRegistrarse {
+.container__card__contrasenaRegistrarse {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   width: 100%;
 }
-.container__loginCard__contrasenaRegistrarse__link {
+.container__card__contrasenaRegistrarse__link {
   color: #50aadc;
   font-size: 0.9rem;
 }
