@@ -97,6 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   justify-content: space-around;
   padding: 0 20px;
 }
@@ -107,7 +108,10 @@ body {
   margin: auto 0;
 }
 .main__img {
+  align-self: center;
   justify-self: flex-end;
+  width: 90%;
+  max-width: 400px;
 }
 
 .caracteristicas {
@@ -193,29 +197,33 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 50px 10px 0;
-  gap: 30px;
+  padding: 50px 20px 0;
   background-color: #26272b;
 }
-.footer__about, .footer__enlacesImportantes, .footer__categorias {
+.footer__seccionesPrincipales {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__seccionesPrincipales__about, .footer__seccionesPrincipales__enlacesImportantes, .footer__seccionesPrincipales__categorias {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footer__about__titulo, .footer__enlacesImportantes__titulo, .footer__categorias__titulo {
+.footer__seccionesPrincipales__about__titulo, .footer__seccionesPrincipales__enlacesImportantes__titulo, .footer__seccionesPrincipales__categorias__titulo {
   font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
 }
-.footer__about__descripcion, .footer__enlacesImportantes__lista__item__link, .footer__categorias__lista__item__link {
+.footer__seccionesPrincipales__about__descripcion, .footer__seccionesPrincipales__enlacesImportantes__lista__item__link, .footer__seccionesPrincipales__categorias__lista__item__link {
   color: #9b9b9b;
   font-size: 0.9rem;
 }
-.footer__categorias__lista {
+.footer__seccionesPrincipales__categorias__lista {
   list-style: none;
 }
-.footer__enlacesImportantes__lista {
+.footer__seccionesPrincipales__enlacesImportantes__lista {
   list-style: none;
 }
 .footer__copyright {
@@ -305,6 +313,44 @@ body {
 .container__card__contrasenaRegistrarse__link {
   color: #50aadc;
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 801px) {
+  .main {
+    position: relative;
+  }
+  .main__titulo {
+    margin-top: 300px;
+    margin-left: 50px;
+  }
+  .main__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    min-width: 300px;
+    z-index: -1;
+  }
+
+  .descargarApp__img {
+    width: 400px;
+  }
+  .descargarApp__containerDescargar {
+    right: 150px;
+    bottom: 170px;
+  }
+
+  .footer {
+    padding: 60px 30px 0;
+    gap: 30px;
+  }
+  .footer__seccionesPrincipales {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .footer__seccionesPrincipales__about__descripcion, .footer__seccionesPrincipales__categorias__lista__item__link, .footer__seccionesPrincipales__enlacesImportantes__lista__item__link {
+    width: 270px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

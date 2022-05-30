@@ -78,6 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
   justify-content: space-around;
   padding: 0 20px;
 
@@ -88,7 +89,10 @@ body {
     margin: auto 0;
   }
   &__img {
+    align-self: center;
     justify-self: flex-end;
+    width: 90%;
+    max-width: 400px;
   }
 }
 
@@ -190,10 +194,14 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 50px 10px 0;
-  gap: 30px;
+  padding: 50px 20px 0;
   background-color: #26272b;
-
+  
+  &__seccionesPrincipales {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
   &__about {
     display: flex;
     flex-direction: column;
@@ -211,37 +219,38 @@ body {
     }
   }
   &__categorias {
-    @extend .footer__about;
+    @extend .footer__seccionesPrincipales__about;
 
     &__titulo {
-      @extend .footer__about__titulo;
+      @extend .footer__seccionesPrincipales__about__titulo;
     }
     &__lista {
       list-style: none;
 
       &__item {
         &__link {
-          @extend .footer__about__descripcion;
+          @extend .footer__seccionesPrincipales__about__descripcion;
         }
       }
     }
   }
   &__enlacesImportantes {
-    @extend .footer__about;
+    @extend .footer__seccionesPrincipales__about;
 
     &__titulo {
-      @extend .footer__about__titulo;
+      @extend .footer__seccionesPrincipales__about__titulo;
     }
     &__lista {
       list-style: none;
 
       &__item {
         &__link {
-          @extend .footer__about__descripcion;
+          @extend .footer__seccionesPrincipales__about__descripcion;
         }
       }
     }
   }
+}
   &__copyright {
     display: flex;
     align-items: center;
