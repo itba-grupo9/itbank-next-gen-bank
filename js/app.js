@@ -6,10 +6,11 @@ const dolarFetch = fetch("https://www.dolarsi.com/api/api.php?type=valoresprinci
 		console.log(data);
 		data.forEach((element) => {
 			const { casa } = element;
-
 			if (casa.compra === "No Cotiza" || casa.venta === "0") return;
+			casa.variacion = (parseFloat(casa.venta) / parseFloat(casa.compra) - 1).toFixed(4) * 100;
 
-            // Creating and inserting elements
+			// Creating and inserting elements
+			const card = document.createElement("div");
 			const cardHTML = `		
             <div class="card bg-light mb-5" style="max-width: 28rem">
 			<div class="card-header">Agencia: ${casa.agencia} | Moneda: ${casa.nombre}</div>
@@ -18,10 +19,12 @@ const dolarFetch = fetch("https://www.dolarsi.com/api/api.php?type=valoresprinci
 				<p class="card-text">
 				<h5 class="card-title">Precio de venta: $${casa.venta}</h5>
 				<p class="card-text">
+				<h5 class="card-title">Variacion del: ${casa.variacion}%</h5>
+				<p class="card-text">
 				</p>
 			</div>
-		    </div> `
-			const card = document.createElement("div");
+		    </div> `;
+
 			card.innerHTML = cardHTML;
 
 			document.body.appendChild(card);
