@@ -44,8 +44,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(11.5px);
   position: fixed;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(5px);
@@ -112,7 +110,7 @@ body {
   align-self: center;
   justify-self: flex-end;
   width: 90%;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .caracteristicas {
@@ -354,6 +352,60 @@ body {
   }
   .footer__seccionesPrincipales__about__descripcion, .footer__seccionesPrincipales__categorias__lista__item__link, .footer__seccionesPrincipales__enlacesImportantes__lista__item__link {
     width: 270px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__nav__iconoMenu {
+    display: none;
+  }
+  .header__nav__menu {
+    flex-direction: row;
+    position: relative;
+    background-color: transparent;
+    height: max-content;
+    padding: 0;
+    width: auto;
+    top: auto;
+    left: auto;
+    margin-right: 40px;
+    margin-left: 0;
+    transition: none;
+  }
+
+  .caracteristicas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+
+  .descargarApp__img {
+    width: 450px;
+  }
+  .descargarApp__containerDescargar {
+    right: 180px;
+    bottom: 200px;
+  }
+
+  .footer__seccionesPrincipales {
+    gap: 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main__titulo {
+    font-size: 2.5rem;
+  }
+  .main__img {
+    max-width: 600px;
+  }
+
+  .caracteristicas {
+    height: 700px;
+    gap: 70px;
+  }
+
+  .footer__seccionesPrincipales {
+    gap: 200px;
   }
 }
 

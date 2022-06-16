@@ -17,8 +17,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(11.5px);
   position: fixed;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(5px);
@@ -93,7 +91,7 @@ body {
     align-self: center;
     justify-self: flex-end;
     width: 90%;
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 

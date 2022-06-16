@@ -1,0 +1,64 @@
+@media screen and (min-width: 1024px) {
+  .header {
+    &__nav {
+      &__iconoMenu {
+        display: none;
+      }
+      &__menu {
+        flex-direction: row;
+        position: relative;
+        background-color: transparent;
+        height: max-content;
+        padding: 0;
+        width: auto;
+        top: auto;
+        left: auto;
+        margin-right: 40px;
+        margin-left: 0;
+        transition: none;
+      }
+    }
+  }
+  .caracteristicas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+  
+  .descargarApp {
+    &__img {
+      width: 450px;
+    }
+    &__containerDescargar {
+      right: 180px;
+      bottom: 200px;
+    }
+  }
+  
+  .footer {
+    &__seccionesPrincipales {
+      gap: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main {
+    &__titulo {
+      font-size: 2.5rem;
+    }
+    &__img {
+      max-width: 600px;
+    }
+  }
+  .caracteristicas {
+    height: 700px;
+    gap: 70px;
+  }
+  .footer {
+    &__seccionesPrincipales {
+      gap: 200px;
+    }
+  }
+}
