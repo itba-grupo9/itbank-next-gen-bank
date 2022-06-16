@@ -5,16 +5,28 @@ const dolarFetch = fetch("https://www.dolarsi.com/api/api.php?type=valoresprinci
 	.then((data) => {
 		console.log(data);
 		data.forEach((element) => {
-			const casaDeCambio = element.casa;
+			const { casa } = element;
 
-			console.log(
-				`Agencia:${casaDeCambio.agencia}\nTipo de moneda: ${casaDeCambio.nombre}\nPrecio de compra: $${casaDeCambio.compra}\nPrecio de venta $${casaDeCambio.venta}`
-			);
+			if (casa.compra === "No Cotiza" || casa.venta === "0") return;
 
-			// Modificar console log por elementos
-			h1.innerHTML = "Hey";
+            // Creating and inserting elements
+			const cardHTML = `		
+            <div class="card bg-light mb-5" style="max-width: 28rem">
+			<div class="card-header">Agencia: ${casa.agencia} | Moneda: ${casa.nombre}</div>
+			<div class="card-body">
+				<h5 class="card-title">Precio de compra: $${casa.compra}</h5>
+				<p class="card-text">
+				<h5 class="card-title">Precio de venta: $${casa.venta}</h5>
+				<p class="card-text">
+				</p>
+			</div>
+		    </div> `
+			const card = document.createElement("div");
+			card.innerHTML = cardHTML;
+
+			document.body.appendChild(card);
 		});
 	})
 	.catch(function (error) {
-		console.log("Hubo un problema con la petición Fetch:" + error.message);
+		console.log(`Hubo un problema con la petición Fetch: ${error.message}`);
 	});
