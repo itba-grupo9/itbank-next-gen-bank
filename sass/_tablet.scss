@@ -1,4 +1,4 @@
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 800px) {
   // PAGINA HOME
   .main {
     position: relative;
@@ -6,6 +6,7 @@
     &__titulo {
       margin-top: 300px;
       margin-left: 50px;
+      align-self: flex-start;
     }
     &__img {
       position: absolute;
