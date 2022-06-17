@@ -34,5 +34,5 @@ const dolarFetch = fetch("https://www.dolarsi.com/api/api.php?type=valoresprinci
 		});
 	})
 	.catch(function (error) {
-		console.log(`Hubo un problema con la petición Fetch: ${error.message}`);
+		alert(`Hubo un problema con la petición Fetch: ${error.message}`);
 	});

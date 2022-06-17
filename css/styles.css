@@ -230,16 +230,3 @@ body {
 
 /* ---------------------- Dolar page ----------------------------------------- */
 
-#dolar-page-body {
-  -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(
-    to left top,
-    #000000,
-    #190b14,
-    #221527,
-    #221f3e,
-    #002d57
-  );
-  background-repeat: no-repeat;
-
-}
