@@ -198,7 +198,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  
+
   &__card {
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@ body {
     border-radius: 10px;
     padding: 30px 15px;
     margin-top: 130px;
-    
+
     &__img {
       width: 90%;
       margin-bottom: 20px;
@@ -268,6 +268,104 @@ body {
       &__link {
         color: #50aadc;
         font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// SECCION PRECIO DOLAR
+.precioDolar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  gap: 30px;
+  width: 100%;
+
+  &__titulo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #50aadc;
+      width: 100%;
+
+      &__titulo {
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 5px 0;
+      }
+    }
+    &__precios {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: rgb(161, 161, 161);
+      width: 100%;
+      padding: 10px 0;
+
+      &__compra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-transform: uppercase;
+
+        &__precio {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+      &__venta {
+        @extend .precioDolar__card__precios__compra;
+
+        &__precio {
+          @extend .precioDolar__card__precios__compra__precio;
+        }
+      }
+    }
+    &__variacion {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background-color: #50aadc;
+      padding: 5px 0;
+
+      &__icono {
+        width: 15px;
+      }
+      &__texto {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #fff;
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(161, 161, 161);
+      width: 100%;
+      padding: 10px 0;
+
+      &__texto {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #fff;
       }
     }
   }
