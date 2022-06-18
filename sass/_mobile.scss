@@ -278,94 +278,102 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
   gap: 30px;
   width: 100%;
+  margin-bottom: 50px;
 
   &__titulo {
     font-size: 1.6rem;
     font-weight: 900;
     color: #fff;
   }
-  &__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
+    gap: 20px;
 
-    &__header {
+    &__card {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #50aadc;
       width: 100%;
 
-      &__titulo {
-        font-size: 1.2rem;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 5px 0;
-      }
-    }
-    &__precios {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      background-color: rgb(161, 161, 161);
-      width: 100%;
-      padding: 10px 0;
-
-      &__compra {
+      &__header {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 5px;
-        text-transform: uppercase;
+        justify-content: center;
+        gap: 10px;
+        background-color: #50aadc;
+        width: 100%;
 
-        &__precio {
+        &__titulo {
           font-size: 1.2rem;
-          font-weight: 600;
+          color: #fff;
+          text-transform: uppercase;
+          padding: 5px 0;
         }
       }
-      &__venta {
-        @extend .precioDolar__card__precios__compra;
+      &__precios {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(161, 161, 161);
+        width: 100%;
+        padding: 10px 0;
 
-        &__precio {
-          @extend .precioDolar__card__precios__compra__precio;
+        &__compra {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+          text-transform: uppercase;
+
+          &__precio {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+        }
+        &__venta {
+          @extend .precioDolar__lista__card__precios__compra;
+
+          &__precio {
+            @extend .precioDolar__lista__card__precios__compra__precio;
+          }
         }
       }
-    }
-    &__variacion {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      background-color: #50aadc;
-      padding: 5px 0;
+      &__variacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #50aadc;
+        padding: 5px 0;
 
-      &__icono {
-        width: 15px;
+        &__icono {
+          width: 15px;
+        }
+        &__texto {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: #fff;
+        }
       }
-      &__texto {
-        font-size: 0.9rem;
-        font-weight: 400;
-        color: #fff;
-      }
-    }
-    &__footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgb(161, 161, 161);
-      width: 100%;
-      padding: 10px 0;
+      &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(161, 161, 161);
+        width: 100%;
+        padding: 10px 0;
 
-      &__texto {
-        font-size: 0.9rem;
-        font-weight: 400;
-        color: #fff;
+        &__texto {
+          font-size: 0.9rem;
+          font-weight: 400;
+          color: #fff;
+        }
       }
     }
   }
@@ -447,4 +455,18 @@ body {
       }
     }
   }
+}
+
+// CLASES DINAMICAS
+.--iconoRojo {
+  filter: invert(14%) sepia(94%) saturate(4199%) hue-rotate(356deg) brightness(104%) contrast(123%);
+}
+.--iconoVerde {
+  filter: invert(57%) sepia(91%) saturate(3539%) hue-rotate(90deg) brightness(120%) contrast(129%);
+}
+.--textoVerde {
+  color: rgb(0, 255, 0);
+}
+.--textoRojo {
+  color: rgb(255, 0, 0);
 }

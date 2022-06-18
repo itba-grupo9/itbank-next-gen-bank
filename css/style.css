@@ -273,22 +273,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
   gap: 30px;
   width: 100%;
+  margin-bottom: 50px;
 }
 .precioDolar__titulo {
   font-size: 1.6rem;
   font-weight: 900;
   color: #fff;
 }
-.precioDolar__card {
+.precioDolar__lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.precioDolar__lista__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.precioDolar__card__header {
+.precioDolar__lista__card__header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,13 +303,13 @@ body {
   background-color: #50aadc;
   width: 100%;
 }
-.precioDolar__card__header__titulo {
+.precioDolar__lista__card__header__titulo {
   font-size: 1.2rem;
   color: #fff;
   text-transform: uppercase;
   padding: 5px 0;
 }
-.precioDolar__card__precios {
+.precioDolar__lista__card__precios {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -310,18 +317,18 @@ body {
   width: 100%;
   padding: 10px 0;
 }
-.precioDolar__card__precios__compra, .precioDolar__card__precios__venta {
+.precioDolar__lista__card__precios__compra, .precioDolar__lista__card__precios__venta {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
   text-transform: uppercase;
 }
-.precioDolar__card__precios__compra__precio, .precioDolar__card__precios__venta__precio {
+.precioDolar__lista__card__precios__compra__precio, .precioDolar__lista__card__precios__venta__precio {
   font-size: 1.2rem;
   font-weight: 600;
 }
-.precioDolar__card__variacion {
+.precioDolar__lista__card__variacion {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,15 +337,15 @@ body {
   background-color: #50aadc;
   padding: 5px 0;
 }
-.precioDolar__card__variacion__icono {
+.precioDolar__lista__card__variacion__icono {
   width: 15px;
 }
-.precioDolar__card__variacion__texto {
+.precioDolar__lista__card__variacion__texto {
   font-size: 0.9rem;
   font-weight: 400;
   color: #fff;
 }
-.precioDolar__card__footer {
+.precioDolar__lista__card__footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +353,7 @@ body {
   width: 100%;
   padding: 10px 0;
 }
-.precioDolar__card__footer__texto {
+.precioDolar__lista__card__footer__texto {
   font-size: 0.9rem;
   font-weight: 400;
   color: #fff;
@@ -397,6 +404,22 @@ body {
 }
 .footer__copyright__texto__link {
   color: #9b9b9b;
+}
+
+.--iconoRojo {
+  filter: invert(14%) sepia(94%) saturate(4199%) hue-rotate(356deg) brightness(104%) contrast(123%);
+}
+
+.--iconoVerde {
+  filter: invert(57%) sepia(91%) saturate(3539%) hue-rotate(90deg) brightness(120%) contrast(129%);
+}
+
+.--textoVerde {
+  color: rgb(0, 255, 0);
+}
+
+.--textoRojo {
+  color: rgb(255, 0, 0);
 }
 
 @media screen and (min-width: 768px) {
