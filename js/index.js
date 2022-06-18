@@ -55,7 +55,7 @@ cargarDatos().then(data => {
           <span class="precioDolar__lista__card__variacion__texto ${item[dolar].variacion.includes("-") ? "--textoRojo" : "--textoVerde"}">Variacion: ${item[dolar].variacion}%</span>
         </div>
         <div class="precioDolar__lista__card__footer">
-          <span class="precioDolar__lista__card__footer__texto">Actualizado: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}</span>
+          <span class="precioDolar__lista__card__footer__texto">Actualizado: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${(date.getMinutes() < 10 ? '0' : '') + date.getMinutes()}</span>
         </div>`;
         }
       });
