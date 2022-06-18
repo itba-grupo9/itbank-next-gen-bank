@@ -1,100 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon" />
+		<!-- Fuentes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap"
+			rel="stylesheet"
+		/>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <title>ITBank - Inicio</title>
-</head>
+		<!-- CSS Bootstrap -->
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
 
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <nav class="header__nav">
-      <a class="header__nav__link" href="index.html"><img class="header__nav__link__logo"
-          src="resources/img/itbank-logo.png" alt="logo itbank"></a>
-      <img class="header__nav__iconoMenu" src="resources/img/hamburger-menu.svg" alt="icono menu">
-      <ul class="header__nav__menu">
-        <li class="header__nav__menu__item">
-          <a class="header__nav__menu__item__link" id="menuDescargarApp" href="#descargarApp">Descarga la App</a>
-        </li>
-        <li class="header__nav__menu__item">
-          <a class="header__nav__menu__item__link" href="#">Nosotros</a>
-        </li>
-        <li class="header__nav__menu__item">
-          <a class="header__nav__menu__item__link" href="views/login.html">Login</a>
-        </li>
-        <li class="header__nav__menu__item">
-          <a class="header__nav__menu__item__link" href="views/registro.html">Registrate</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>ITBank - Inicio</title>
+	</head>
 
-  <!-- SECCION PRINCIPAL -->
-  <main class="main">
-    <h2 class="main__titulo">No somos la app de un banco.<br>Somos un banco en una app.</h2>
-    <img class="main__img" src="resources/img/cat.png" alt="foto de un gato">
-  </main>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<nav class="header__nav">
+				<a class="header__nav__link" href="index.html"
+					><img class="header__nav__link__logo" src="resources/img/itbank-logo.png" alt="logo itbank"
+				/></a>
+				<img class="header__nav__iconoMenu" src="resources/img/hamburger-menu.svg" alt="icono menu" />
+				<ul class="header__nav__menu">
+                    <li class="header__nav__menu__item">
+                        <a class="header__nav__menu__item__link" href="#precioDolar">Cotización Dolar</a>
+                    </li>
+					<li class="header__nav__menu__item">
+						<a class="header__nav__menu__item__link" id="menuDescargarApp" href="#descargarApp"
+							>Descarga la App</a
+						>
+					</li>
+					<li class="header__nav__menu__item">
+						<a class="header__nav__menu__item__link" href="#">Nosotros</a>
+					</li>
+					<li class="header__nav__menu__item">
+						<a class="header__nav__menu__item__link" href="views/login.html">Login</a>
+					</li>
+					<li class="header__nav__menu__item">
+						<a class="header__nav__menu__item__link" href="views/registro.html">Registrate</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-  <!-- SECCION CARACTERISTICAS -->
-  <section class="caracteristicas">
-    <div class="caracteristicas__container">
-      <img class="caracteristicas__container__icono" src="resources/img/circle-check-solid.svg" alt="icono check">
-      <h5 class="caracteristicas__container__titulo">Fácil de usar.</h5>
-      <p class="caracteristicas__container__descripcion">Tan facil que podría usarlo hasta tu abuela.</p>
-    </div>
+		<!-- SECCION PRINCIPAL -->
+		<main class="main">
+			<h2 class="main__titulo">No somos la app de un banco.<br />Somos un banco en una app.</h2>
+			<img class="main__img" src="resources/img/cat.png" alt="foto de un gato" />
+		</main>
 
-    <div class="caracteristicas__container">
-      <img class="caracteristicas__container__icono" src="resources/img/bullseye-solid.svg" alt="icono diana">
-      <h5 class="caracteristicas__container__titulo">Clientes de Élite.</h5>
-      <p class="caracteristicas__container__descripcion">Nuestra prioridad es cada uno de nuestros clientes.</p>
-    </div>
+		<!-- SECCION CARACTERISTICAS -->
+		<section class="caracteristicas">
+			<div class="caracteristicas__container">
+				<img
+					class="caracteristicas__container__icono"
+					src="resources/img/circle-check-solid.svg"
+					alt="icono check"
+				/>
+				<h5 class="caracteristicas__container__titulo">Fácil de usar.</h5>
+				<p class="caracteristicas__container__descripcion">Tan facil que podría usarlo hasta tu abuela.</p>
+			</div>
 
-    <div class="caracteristicas__container">
-      <img class="caracteristicas__container__icono" src="resources/img/heart-solid.svg" alt="icono corazon">
-      <h5 class="caracteristicas__container__titulo">Satisfacción garantizada.</h5>
-      <p class="caracteristicas__container__descripcion">Cada uno de nuestros clientes se encuentra satisfecho.</p>
-    </div>
-  </section>
+			<div class="caracteristicas__container">
+				<img
+					class="caracteristicas__container__icono"
+					src="resources/img/bullseye-solid.svg"
+					alt="icono diana"
+				/>
+				<h5 class="caracteristicas__container__titulo">Clientes de Élite.</h5>
+				<p class="caracteristicas__container__descripcion">
+					Nuestra prioridad es cada uno de nuestros clientes.
+				</p>
+			</div>
 
-  <!-- SECCION DESCARGAR APP -->
-  <section class="descargarApp" id="descargarApp">
-    <img class="descargarApp__img" src="resources/img/phone.png" alt="imagen telefono">
+			<div class="caracteristicas__container">
+				<img
+					class="caracteristicas__container__icono"
+					src="resources/img/heart-solid.svg"
+					alt="icono corazon"
+				/>
+				<h5 class="caracteristicas__container__titulo">Satisfacción garantizada.</h5>
+				<p class="caracteristicas__container__descripcion">
+					Cada uno de nuestros clientes se encuentra satisfecho.
+				</p>
+			</div>
+		</section>
 
-    <div class="descargarApp__containerDescargar">
-      <span class="descargarApp__containerDescargar__titulo">Descarga la App</span>
-      <div class="descargarApp__containerDescargar__botones">
-        <a class="descargarApp__containerDescargar__botones__appStore" href="#">
-          <img class="descargarApp__containerDescargar__botones__appStore__logo" src="resources/img/apple-brands.svg"
-            alt="logotipo apple">
-          Download
-        </a>
+		<!-- SECCION DESCARGAR APP -->
+		<section class="descargarApp" id="descargarApp">
+			<img class="descargarApp__img" src="resources/img/phone.png" alt="imagen telefono" />
 
-        <a class="descargarApp__containerDescargar__botones__playStore" href="#">
-          <img class="descargarApp__containerDescargar__botones__playStore__logo"
-            src="resources/img/google-play-brands.svg" alt="logotipo play store">
-          Download
-        </a>
-      </div>
-    </div>
-  </section>
+			<div class="descargarApp__containerDescargar">
+				<span class="descargarApp__containerDescargar__titulo">Descarga la App</span>
+				<div class="descargarApp__containerDescargar__botones">
+					<a class="descargarApp__containerDescargar__botones__appStore" href="#">
+						<img
+							class="descargarApp__containerDescargar__botones__appStore__logo"
+							src="resources/img/apple-brands.svg"
+							alt="logotipo apple"
+						/>
+						Download
+					</a>
 
-  <!-- SECCION PRECIO DOLAR -->
-  <section class="precioDolar">
-    <h3 class="precioDolar__titulo">Precio del dolar hoy</h3>
+					<a class="descargarApp__containerDescargar__botones__playStore" href="#">
+						<img
+							class="descargarApp__containerDescargar__botones__playStore__logo"
+							src="resources/img/google-play-brands.svg"
+							alt="logotipo play store"
+						/>
+						Download
+					</a>
+				</div>
+			</div>
+		</section>
 
-    <div class="precioDolar__lista" id="listaPreciosDolar">
-      <!-- <div class="precioDolar__lista__card">
+		<!-- SECCION PRECIO DOLAR -->
+		<section class="precioDolar" id="precioDolar">
+			<h3 class="precioDolar__titulo">Precio del dolar hoy</h3>
+			<div class="spinner-border text-light" id="dolar-api-spinner" role="status">
+			</div>
+
+			<div class="precioDolar__lista" id="listaPreciosDolar">
+				<!-- <div class="precioDolar__lista__card">
         <div class="precioDolar__lista__card__header">
           <img class="precioDolar__lista__card__header__icono" src="resources/img/icono-billete-dolar.svg"
             alt="icono billete dolar">
@@ -120,76 +162,97 @@
           <span class="precioDolar__lista__card__footer__texto">Actualizado: 01/06/2022 12:00</span>
         </div>
       </div> -->
-    </div>
-  </section>
+			</div>
+		</section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__seccionesPrincipales">
-      <section class="footer__seccionesPrincipales__about">
-        <span class="footer__seccionesPrincipales__about__titulo">About</span>
-        <p class="footer__seccionesPrincipales__about__descripcion">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error est corporis
-          quidem accusamus nulla dolorum ab porro minima animi dolorem illum, autem dolor qui provident perspiciatis
-          consequuntur ratione doloremque quibusdam!
-          Iste, provident culpa aliquam cumque sunt dignissimos sit error iusto aspernatur inventore repellendus sed ea
-          assumenda modi ducimus cupiditate ad officia? Illo aut id ut corrupti commodi aspernatur maiores fuga.
-        </p>
-      </section>
-      <section class="footer__seccionesPrincipales__categorias">
-        <span class="footer__seccionesPrincipales__categorias__titulo">Categories</span>
-        <ul class="footer__seccionesPrincipales__categorias__lista">
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Abrir una cuenta</a>
-          </li>
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Careers</a>
-          </li>
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Lorem</a>
-          </li>
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Ipsum</a>
-          </li>
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Corporis</a>
-          </li>
-          <li class="footer__seccionesPrincipales__categorias__lista__item">
-            <a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Aspernatur</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__seccionesPrincipales__enlacesImportantes">
-        <span class="footer__seccionesPrincipales__enlacesImportantes__titulo">Enlaces importantes</span>
-        <ul class="footer__seccionesPrincipales__enlacesImportantes__lista">
-          <li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
-            <a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#">Nosotros</a>
-          </li>
-          <li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
-            <a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#">Contacto</a>
-          </li>
-          <li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
-            <a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#">Contribuir</a>
-          </li>
-          <li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
-            <a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#">Politicas de
-              Privacidad</a>
-          </li>
-          <li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
-            <a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#">Sitemap</a>
-          </li>
-        </ul>
-      </section>
-    </div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="footer__seccionesPrincipales">
+				<section class="footer__seccionesPrincipales__about">
+					<span class="footer__seccionesPrincipales__about__titulo">About</span>
+					<p class="footer__seccionesPrincipales__about__descripcion">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error est corporis quidem accusamus
+						nulla dolorum ab porro minima animi dolorem illum, autem dolor qui provident perspiciatis
+						consequuntur ratione doloremque quibusdam! Iste, provident culpa aliquam cumque sunt dignissimos
+						sit error iusto aspernatur inventore repellendus sed ea assumenda modi ducimus cupiditate ad
+						officia? Illo aut id ut corrupti commodi aspernatur maiores fuga.
+					</p>
+				</section>
+				<section class="footer__seccionesPrincipales__categorias">
+					<span class="footer__seccionesPrincipales__categorias__titulo">Categories</span>
+					<ul class="footer__seccionesPrincipales__categorias__lista">
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#"
+								>Abrir una cuenta</a
+							>
+						</li>
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Careers</a>
+						</li>
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Lorem</a>
+						</li>
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Ipsum</a>
+						</li>
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#">Corporis</a>
+						</li>
+						<li class="footer__seccionesPrincipales__categorias__lista__item">
+							<a class="footer__seccionesPrincipales__categorias__lista__item__link" href="#"
+								>Aspernatur</a
+							>
+						</li>
+					</ul>
+				</section>
+				<section class="footer__seccionesPrincipales__enlacesImportantes">
+					<span class="footer__seccionesPrincipales__enlacesImportantes__titulo">Enlaces importantes</span>
+					<ul class="footer__seccionesPrincipales__enlacesImportantes__lista">
+						<li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
+							<a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#"
+								>Nosotros</a
+							>
+						</li>
+						<li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
+							<a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#"
+								>Contacto</a
+							>
+						</li>
+						<li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
+							<a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#"
+								>Contribuir</a
+							>
+						</li>
+						<li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
+							<a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#"
+								>Politicas de Privacidad</a
+							>
+						</li>
+						<li class="footer__seccionesPrincipales__enlacesImportantes__lista__item">
+							<a class="footer__seccionesPrincipales__enlacesImportantes__lista__item__link" href="#"
+								>Sitemap</a
+							>
+						</li>
+					</ul>
+				</section>
+			</div>
 
-    <section class="footer__copyright">
-      <p class="footer__copyright__texto">Copyright &copy; 2022 All Rights Reserved by <a
-          class="footer__copyright__texto__link" href="index.html">ITBANK.</a></p>
-    </section>
-  </footer>
+			<section class="footer__copyright">
+				<p class="footer__copyright__texto">
+					Copyright &copy; 2022 All Rights Reserved by
+					<a class="footer__copyright__texto__link" href="index.html">ITBANK.</a>
+				</p>
+			</section>
+		</footer>
 
-  <!-- Javascript -->
-  <script src="js/index.js"></script>
-</body>
+		<!-- Javascript Bootstrap -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
 
+		<!-- Javascript -->
+		<script src="js/index.js"></script>
+	</body>
 </html>
