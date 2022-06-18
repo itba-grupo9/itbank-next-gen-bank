@@ -22,16 +22,19 @@ console.log(cargarDatos());
 
 // Funcion para mostrar los datos en el HTML
 const mostrarDatos = async () => {
-const date = new Date();
-cargarDatos().then(data => {
-  const tiposDolar = ['Dolar Oficial', 'Dolar Blue', 'Dolar Contado con Liqui', 'Dolar Promedio', 'Dolar Bolsa', 'Dolar turista'];
-  for (item of data) {
-    for (dolar in item) {
-      console.log(item[dolar]);
-      tiposDolar.forEach(tipo => {
-        if (item[dolar].nombre === tipo) {
-          console.log(item[dolar].nombre);
-          listaPreciosDolar.innerHTML += `
+  const date = new Date();
+  cargarDatos().then(data => {
+    const tiposDolar = ['Dolar Oficial', 'Dolar Blue', 'Dolar Contado con Liqui', 'Dolar Promedio', 'Dolar Bolsa', 'Dolar turista'];
+    for (item of data) {
+      for (dolar in item) {
+        tiposDolar.forEach(tipo => {
+          let compra = item[dolar].compra;
+          let venta = item[dolar].venta;
+          let variacion = item[dolar].variacion;
+          let fecha = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+          let hora = date.getHours() + ':' + (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+          if (item[dolar].nombre === tipo) {
+            listaPreciosDolar.innerHTML += `
           <div class="precioDolar__lista__card">
         <div class="precioDolar__lista__card__header">
           <img class="precioDolar__lista__card__header__icono" src="resources/img/icono-billete-dolar.svg"
@@ -42,27 +45,27 @@ cargarDatos().then(data => {
         <div class="precioDolar__lista__card__precios">
           <div class="precioDolar__lista__card__precios__compra">
             <span class="precioDolar__lista__card__precios__compra__texto">Compra</span>
-            <span class="precioDolar__lista__card__precios__compra__precio">${item[dolar].compra === "No Cotiza" ? "No Cotiza" : "$" + item[dolar].compra}</span>
+            <span class="precioDolar__lista__card__precios__compra__precio">${compra === "No Cotiza" ? "No Cotiza" : "$" + compra}</span>
           </div>
           <div class="precioDolar__lista__card__precios__venta">
             <span class="precioDolar__lista__card__precios__venta__texto">Venta</span>
-            <span class="precioDolar__lista__card__precios__venta__precio">${item[dolar].venta === "No Cotiza" ? "No Cotiza" : "$" + item[dolar].venta}</span>
+            <span class="precioDolar__lista__card__precios__venta__precio">${venta === "No Cotiza" ? "No Cotiza" : "$" + venta}</span>
           </div>
         </div>
         <div class="precioDolar__lista__card__variacion">
-          <img class="precioDolar__lista__card__variacion__icono ${item[dolar].variacion.includes("-") ? "--iconoRojo" : "--iconoVerde"}" src="resources/img/icono-triangulo-${item[dolar].variacion.includes("-") ? "abajo" : "arriba"}.svg"
-            alt="icono triangulo arriba">
-          <span class="precioDolar__lista__card__variacion__texto ${item[dolar].variacion.includes("-") ? "--textoRojo" : "--textoVerde"}">Variacion: ${item[dolar].variacion}%</span>
+          ${variacion === "0" ? "" : `<img class="precioDolar__lista__card__variacion__icono ${variacion.includes("-") ? "--iconoRojo" : "--iconoVerde"}" src="resources/img/icono-triangulo-${variacion.includes("-") ? "abajo" : "arriba"}.svg"
+            alt="icono triangulo ${variacion.includes("-") ? "abajo" : "arriba"}">`}
+          <span class="precioDolar__lista__card__variacion__texto ${variacion === "0" ? "--textoGris" : variacion.includes("-") ? "--textoRojo" : "--textoVerde"}">Variacion: ${variacion}%</span>
         </div>
         <div class="precioDolar__lista__card__footer">
-          <span class="precioDolar__lista__card__footer__texto">Actualizado: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${(date.getMinutes() < 10 ? '0' : '') + date.getMinutes()}</span>
+          <span class="precioDolar__lista__card__footer__texto">Actualizado: ${fecha} ${hora}</span>
         </div>`;
-        }
-      });
+          }
+        });
+      }
     }
-  }
-}).catch(error => {
-  console.log(error);
-});
+  }).catch(error => {
+    console.log(error);
+  });
 }
 mostrarDatos();
