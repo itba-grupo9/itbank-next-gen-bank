@@ -144,6 +144,7 @@ body {
   position: relative;
   height: 800px;
   background-color: #372746;
+  margin-bottom: 50px;
 }
 .descargarApp__img {
   position: absolute;
@@ -276,6 +277,7 @@ body {
   gap: 30px;
   width: 100%;
   margin-bottom: 50px;
+  padding: 0 10px;
 }
 .precioDolar__titulo {
   font-size: 1.6rem;
@@ -420,6 +422,10 @@ body {
 
 .--textoRojo {
   color: rgb(255, 0, 0);
+}
+
+.--textoGris {
+  color: rgb(128, 128, 128);
 }
 
 @media screen and (min-width: 768px) {

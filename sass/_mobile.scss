@@ -131,6 +131,7 @@ body {
   position: relative;
   height: 800px;
   background-color: #372746;
+  margin-bottom: 50px;
 
   &__img {
     position: absolute;
@@ -281,6 +282,7 @@ body {
   gap: 30px;
   width: 100%;
   margin-bottom: 50px;
+  padding: 0 10px;
 
   &__titulo {
     font-size: 1.6rem;
