@@ -35,6 +35,13 @@
       bottom: 200px;
     }
   }
+
+  .precioDolar {
+    &__lista {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+  }
   
   .footer {
     &__seccionesPrincipales {
@@ -52,10 +59,19 @@
       max-width: 600px;
     }
   }
+  
   .caracteristicas {
     height: 700px;
     gap: 70px;
   }
+
+  .precioDolar {
+    &__lista {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+
   .footer {
     &__seccionesPrincipales {
       gap: 200px;

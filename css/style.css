@@ -289,7 +289,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   width: 100%;
-  gap: 20px;
+  gap: 15px;
 }
 .precioDolar__lista__card {
   display: flex;
@@ -304,6 +304,9 @@ body {
   gap: 10px;
   background-color: #50aadc;
   width: 100%;
+}
+.precioDolar__lista__card__header__icono {
+  width: 25px;
 }
 .precioDolar__lista__card__header__titulo {
   font-size: 1.2rem;
@@ -340,7 +343,7 @@ body {
   padding: 5px 0;
 }
 .precioDolar__lista__card__variacion__icono {
-  width: 15px;
+  width: 10px;
 }
 .precioDolar__lista__card__variacion__texto {
   font-size: 0.9rem;
@@ -502,6 +505,11 @@ body {
     bottom: 200px;
   }
 
+  .precioDolar__lista {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
   .footer__seccionesPrincipales {
     gap: 100px;
   }
@@ -517,6 +525,11 @@ body {
   .caracteristicas {
     height: 700px;
     gap: 70px;
+  }
+
+  .precioDolar__lista {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
   }
 
   .footer__seccionesPrincipales {
