@@ -144,6 +144,7 @@ body {
   position: relative;
   height: 800px;
   background-color: #372746;
+  margin-bottom: 50px;
 }
 .descargarApp__img {
   position: absolute;
@@ -275,8 +276,8 @@ body {
   align-items: center;
   gap: 30px;
   width: 100%;
+  padding: 0 10px;
   margin-bottom: 50px;
-  margin-top: 20px;
 }
 .precioDolar__titulo {
   font-size: 1.6rem;
@@ -386,11 +387,9 @@ body {
   color: #9b9b9b;
   font-size: 0.9rem;
 }
-.footer__seccionesPrincipales__categorias__lista {
+.footer__seccionesPrincipales__categorias__lista, .footer__seccionesPrincipales__enlacesImportantes__lista {
   list-style: none;
-}
-.footer__seccionesPrincipales__enlacesImportantes__lista {
-  list-style: none;
+  padding: 0;
 }
 .footer__copyright {
   display: flex;
@@ -423,6 +422,10 @@ body {
   color: rgb(255, 0, 0);
 }
 
+.--textoGris {
+  color: rgb(85, 85, 85);
+}
+
 @media screen and (min-width: 768px) {
   .main {
     position: relative;
@@ -447,6 +450,11 @@ body {
   .descargarApp__containerDescargar {
     right: 150px;
     bottom: 170px;
+  }
+
+  .precioDolar__lista {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
   }
 
   .footer {

@@ -131,6 +131,7 @@ body {
   position: relative;
   height: 800px;
   background-color: #372746;
+  margin-bottom: 50px;
 
   &__img {
     position: absolute;
@@ -280,6 +281,7 @@ body {
   align-items: center;
   gap: 30px;
   width: 100%;
+  padding: 0 10px;
   margin-bottom: 50px;
 
   &__titulo {
@@ -408,12 +410,13 @@ body {
     }
     &__categorias {
       @extend .footer__seccionesPrincipales__about;
-
+      
       &__titulo {
         @extend .footer__seccionesPrincipales__about__titulo;
       }
       &__lista {
         list-style: none;
+        padding: 0;
 
         &__item {
           &__link {
@@ -429,7 +432,7 @@ body {
         @extend .footer__seccionesPrincipales__about__titulo;
       }
       &__lista {
-        list-style: none;
+        @extend .footer__seccionesPrincipales__categorias__lista;
 
         &__item {
           &__link {
@@ -471,5 +474,5 @@ body {
   color: rgb(255, 0, 0);
 }
 .--textoGris {
-  color: rgb(128, 128, 128);
+  color: rgb(85, 85, 85);
 }
